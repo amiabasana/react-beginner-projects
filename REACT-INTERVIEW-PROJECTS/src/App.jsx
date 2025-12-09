@@ -1,23 +1,30 @@
-import './App.css'
-import Accordion from './components/accordian'
-import RandomColor from './components/random-color'
-import StarRating from './components/star-rating'
+import "./App.css";
+import Accordion from "./components/accordian";
+import RandomColor from "./components/random-color";
+import StarRating from "./components/star-rating";
+import ImageSlider from "./components/image-slider/index";
 
 function App() {
-
+  //
   return (
-    <div className='App'>
-     {/* Accordion Component */}
-    {/* <Accordion/> */}
-    
-     {/* Random Color Components */}
-    {/* <RandomColor/> */}
+    <div className="App">
+      {/* Accordion Component */}
+      {/* <Accordion/> */}
 
-    {/* Star Rating Component */}
-    <StarRating noOfStars={10}/>
+      {/* Random Color Components */}
+      {/* <RandomColor/> */}
+
+      {/* Star Rating Component */}
+      {/* <StarRating noOfStars={10}/> */}
+
+      {/* Image Slider component */}
+      <ImageSlider
+        url={"https://picsum.photos/v2/list"}
+        page={"2"}
+        limit={"10"}
+      />
     </div>
-
-  )
+  );
 }
 
-export default App
+export default App;
