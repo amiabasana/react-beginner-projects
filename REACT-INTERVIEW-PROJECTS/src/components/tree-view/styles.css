@@ -1,0 +1,25 @@
+.tree-view-container {
+  width: 350px;
+  height: 100vh;
+  background: rgb(0, 71, 110);
+  padding: 16px;
+}
+
+.menu-list-container {
+  list-style: none;
+  padding-left: 0;
+  height: 100%;
+}
+
+.menu-list-container .menu-item {
+  padding-left: calc(var(--depth) * 20px);
+  /* padding: 8px 0; */
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu-item .menu{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
