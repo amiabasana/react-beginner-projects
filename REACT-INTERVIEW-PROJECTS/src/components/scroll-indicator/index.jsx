@@ -41,7 +41,7 @@ export default function ScrollIndicator({ url }) {
   useEffect(() => {
     window.addEventListener("scroll", handleScrollPercentage);
     return () => {
-      window.removeEventListener("scroll", () => {});
+      window.removeEventListener("scroll", handleScrollPercentage);
     };
   }, []);
 
@@ -56,7 +56,7 @@ export default function ScrollIndicator({ url }) {
   }
 
   return (
-    <div>
+    <div className="text-center">
       <div className="top-container">
         <h1>Scroll Indicator</h1>
         <div className="scroll-progress-tracking-container">
